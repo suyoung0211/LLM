@@ -1,12 +1,13 @@
-### - pip install 실행으로 설치한 패키지
+### - 패키지 설치 여부 확인
 ```
-pip install gradio openai dotenv
+설치된 전체 패키지 확인
+pip list
 
-pip install langchain langchain-community langchain_openai (기존 버전 업그레이드는 -U 옵션)
-
-pip install langchain-pinecone pinecone-client langgraph
-```
-### -패키지 설치 여부 확인
-```
+설치된 단일 패키지 확인
 pip list | findstr '패키지명'
+```
+
+### - 다른 환경에서 패키지 설치하기
+```
+pip install -r requirements.txt
 ```
